@@ -15,7 +15,7 @@ public class KafkaProducer {
     private final KafkaTemplate<String, String> kafkaTemplate;
 
     public void publishMessage(String message){
-        log.info(format(" 📤 Sending message to pratik Topic: %s", message));
+        log.info(format(" 📤 Sending message to pratik Topic: %s  📤 ", message));
         kafkaTemplate.send("pratik-topic", message);
     }
 }
