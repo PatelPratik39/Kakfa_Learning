@@ -9,9 +9,11 @@ import org.springframework.kafka.config.TopicBuilder;
 public class KafkaTopicConfig {
 
     @Bean
-    public NewTopic topic1() {
+    public NewTopic createTopic() {
         return TopicBuilder
-                .name("pratiks-first-topic")
+                .name("pratik-topic")  // ✅ Topic Name
+                .partitions(3)         // ✅ Number of Partitions
+                .replicas(1)           // ✅ Replication Factor
                 .build();
     }
 }
