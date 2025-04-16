@@ -47,12 +47,7 @@ bin/kafka-server-start.sh config/server.properties
 
 ### Project Setup
 
-Clone this repository and navigate to the project folder:
 
-```bash
-git clone https://github.com/ali-bouali/apache-kafka-with-spring-boot-reactive
-cd apache-kafka-with-spring-boot-reactive
-```
 
 ## Key Concepts
 
